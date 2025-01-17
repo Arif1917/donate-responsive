@@ -9,6 +9,11 @@
     margin: 0;
 }
 
+section{
+    margin-top: 50px;
+    padding: 35px 120px;
+}
+
 /* shared related styles */
 
 
@@ -17,8 +22,8 @@
 }
 .common-paragraph{
     color: rgb(112, 112, 112);
-font-size: 14px;
-font-weight: 300;
+font-size: 16px;
+font-weight: 500;
 }
 .common-button{
 color: rgb(255, 255, 255);
@@ -59,6 +64,39 @@ text-align: left;
     margin-bottom: 23px;
 }
 
+/* donate section related styles */
+
+.donate-section{
+    text-align: center;
+}
+
+.donate-section >p{
+    margin-top: 22px;
+}
+
+.donate-container-tk{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.donate-tk{
+    background-color: lightgrey;
+    text-align: center;
+    align-items: center;
+    padding: 30px 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.donate-tk:hover{
+    box-sizing: border-box;
+border: 2px solid rgb(255, 89, 89);
+border-radius: 5px;
+
+background: rgb(255, 238, 238);
+}
+
 /* for mobile device */
 
 @media screen and (max-width:576px) {
@@ -66,11 +104,19 @@ text-align: left;
         flex-direction: column;
         padding: 12px 12px;
     }
+    .donate-container-tk{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .banner-img img{
         width: 100%;
         height: 100%;
         border-radius: 15px;
         margin-top: 30px;
+    }
+    section{
+        margin-top: 50px;
+        padding: 15px 20px;
     }
 }
 
@@ -83,6 +129,11 @@ text-align: left;
         
     }
 
+    .donate-container-tk{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .banner-content >h1, p, .banner-content > div{
         text-align: center;
     }
@@ -91,5 +142,9 @@ text-align: left;
         height: 100%;
         border-radius: 15px;
         margin-top: 30px;
+    }
+    section{
+        margin-top: 50px;
+        padding: 15px 20px;
     }
 } 
